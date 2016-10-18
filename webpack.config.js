@@ -5,20 +5,27 @@ var BUILD_DIR = path.resolve(__dirname, 'js');
 var APP_DIR = path.resolve(__dirname, 'js');
 
 var config = {
-  entry: APP_DIR + '/index.jsx',
-  output: {
-    path: BUILD_DIR,
-    filename: 'bundle.js'
+    entry: APP_DIR + '/index.jsx',
+    output: {
+        path: BUILD_DIR,
+        filename: 'bundle.js'
     },
     module : {
-      loaders : [
-        {
-          test : /\.jsx?/,
-          include : APP_DIR,
-          loader : 'babel'
-        }
-      ]
-    }
+        loaders : [
+            {
+              test : /\.jsx?/,
+              include : APP_DIR,
+              loader : 'babel'
+            }
+        ]
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false // https://github.com/webpack/webpack/issues/1496
+            }
+        })
+    ]
 };
 
 module.exports = config;
