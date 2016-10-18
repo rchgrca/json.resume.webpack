@@ -4,6 +4,8 @@ export default $.extend(true, {}, {}, {
         {section: "work-experience", font: "building"},
         {section: "skills", font: "code"},
         {section: "education", font: "mortar-board"},
-        {section: "interests", font: "heart"}
+        {section: "interests", font: "heart"},
+        {section: "philosophy", font: "lightbulb-o"},
+        {section: "day", font: "clock-o"}
     ]
 });

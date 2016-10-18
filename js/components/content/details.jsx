@@ -5,6 +5,8 @@ import Experience from './experience.jsx'
 import Skills from './skills.jsx'
 import Education from './education.jsx'
 import Interests from './interests.jsx'
+import Philosophy from './philosophy.jsx'
+import Day from './day.jsx'
 
 export default class Details extends Component {
     render() {
@@ -40,6 +42,14 @@ export default class Details extends Component {
                                     } else if (block.section === "interests") {
                                         return (
                                             <Interests model={this.props.model} />
+                                        )
+                                    } else if (block.section === "philosophy") {
+                                        return (
+                                            <Philosophy model={this.props.model} />
+                                        )
+                                    } else if (block.section === "day") {
+                                        return (
+                                            <Day model={this.props.model} />
                                         )
                                     } else {
                                         // do nothing

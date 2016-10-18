@@ -305,7 +305,7 @@ export default $.extend(true, {}, {}, {
           "name": "Languages",
           "level": "Master",
           "keywords": [
-            "HTML5, JavaScript (ES6), CSS3, Ruby, SQL, Python"
+            "HTML5, JavaScript (ES6), CSS3, Ruby, PHP, SQL, Python"
           ]
         },
         {
@@ -376,6 +376,18 @@ export default $.extend(true, {}, {}, {
           "name": "Near-Space Exploration",
           "keywords": [],
           "href":"https://www.youtube.com/watch?v=QldWTVju_uk"
+        }
+      ],
+      "philosophy": [
+        {
+          "language": "Spanish",
+          "fluency": "(speak, read, write)"
+        }
+      ],
+      "day": [
+        {
+          "language": "Spanish",
+          "fluency": "(speak, read, write)"
         }
       ]
     }
