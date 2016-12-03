@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import section from './models/section'
 import resume from './models/resume'
 import contact from './models/contact'
 import FloatingNav from './components/floatingNav.jsx'
@@ -15,13 +14,13 @@ export default class App extends Component {
                 <div className="row main clearfix">
                     <a href="#" className="js-floating-nav-trigger floating-nav-trigger"><i className="fa fa-bars"></i><span className="close-icon">&times;</span></a>
                     <nav className="floating-nav js-floating-nav">
-                        <FloatingNav model={section.model} />
+                        <FloatingNav model={resume.model.basics.section} />
                     </nav>
                     <section className="col-md-3 card-wrapper profile-card-wrapper affix">
                         <Card model={resume.model} contact={contact.model}/>
                     </section>
                     <section className="col-md-9 card-wrapper content-card-wrapper pull-right">
-                        <Content model={resume.model} section={section.model} />
+                        <Content model={resume.model} section={resume.model.basics.section} />
                     </section>
                 </div>
             </div>

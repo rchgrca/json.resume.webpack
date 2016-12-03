@@ -119,6 +119,15 @@ export default $.extend(true, {}, {}, {
             "username": "rchgrca",
             "url": "http://www.linkedin.com/in/rchgrca"
           }
+        ],
+        "section": [
+            {section: "about", font: "user"},
+            {section: "work-experience", font: "building"},
+            //{section: "skills", font: "code"},
+            {section: "education", font: "mortar-board"},
+            {section: "interests", font: "heart"},
+            {section: "philosophy", font: "lightbulb-o"},
+            {section: "day", font: "clock-o"}
         ]
       },
       "work": [
@@ -127,8 +136,7 @@ export default $.extend(true, {}, {}, {
           "position": "Sr. Frontend Engineer",
           "website": "http://euclidanalytics.com",
           "startDate": "2015-08-15",
-          "endDate": moment(),
-          "duration": moment.preciseDiff(moment("2015-08-15"), moment()),
+          "endDate": false,
           "summary": "Data Visualization",
           "highlights": [
             "Created/maintained a web/mobile application for the largest sensor network in the world",
@@ -142,7 +150,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://quickbooks.intuit.com.au",
           "startDate": "2012-02-01",
           "endDate": "2015-07-15",
-          "duration": moment.preciseDiff(moment("2012-02-01"), moment("2015-07-15")),
           "summary": "Adobe CQ5 Component Development for Intuit",
           "highlights": [
             "Lead Developer for “on-boarding” of JSP pages to CQ5/Ruby on Rails environment for Pro Tax Group",
@@ -156,7 +163,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://blyve.com",
           "startDate": "2008-01-01",
           "endDate": "2010-08-01",
-          "duration": moment.preciseDiff(moment("2008-01-01"), moment("2010-08-01")),
           "summary": "Development of client-side code, fundraising, business development",
           "highlights": [
             "Single-handedly conceived, designed, architected, & developed full stack of a polling based, real-time web and mobile-web based application from conception to release",
@@ -172,7 +178,6 @@ export default $.extend(true, {}, {}, {
           "website": "",
           "startDate": "2010-08-01",
           "endDate": "2011-03-30",
-          "duration": moment.preciseDiff(moment("2010-08-01"), moment("2011-03-30")),
           "summary": "Ideate, Innovate, Implement",
           "highlights": [
             "Architect/developer of NodeJs app that calculated employee bit.ly links to drive more traffic to AOL sites",
@@ -187,7 +192,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://quickbooks.intuit.com.au",
           "startDate": "2004-03-01",
           "endDate": "2007-11-30",
-          "duration": moment.preciseDiff(moment("2004-03-01"), moment("2007-11-30")),
           "summary": "Development of dynamic client-side code for the presentation layer",
           "highlights": [
             "Lead Frontend Engineer Yahoo! Frontpage (delivered Exceptional News & Top Searches modules)",
@@ -205,7 +209,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://ebay.com",
           "startDate": "2003-08-01",
           "endDate": "2003-12-15",
-          "duration": moment.preciseDiff(moment("2003-08-01"), moment("2003-12-15")),
           "summary": "Development of HTML embedded XSL stylesheets",
           "highlights": [
             "Several features including 'Item Subtitle', 'Help Phase 5' (Lead Developer)"
@@ -217,7 +220,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://www.prnewswire.com/news-releases/sgi-and-thirdspace-form-interactive-tv-alliance-75554182.html",
           "startDate": "2002-02-01",
           "endDate": "2003-05-01",
-          "duration": moment.preciseDiff(moment("2002-02-01"), moment("2003-05-01")),
           "summary": "Development of DHTML embedded XSL stylesheets and server-side applications",
           "highlights": [
             "Lead developer for the Thomson set top box product. Brought in $500K in revenue"
@@ -229,7 +231,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://www.cnet.com/news/powermarket-gets-12-5-million/",
           "startDate": "2001-09-01",
           "endDate": "2002-01-30",
-          "duration": moment.preciseDiff(moment("2001-09-01"), moment("2002-01-30")),
           "summary": "Development of interactive DHTML mockups and application simulation",
           "highlights": [
             "Created an ASP/database driven company website (VBScript, MS-Access, ODBC, DAC, ADO)",
@@ -242,7 +243,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://www.prnewswire.com/news-releases/american-express-and-zowi-corporation-form-strategic-partnership-and-launch-stored-value-card-for-young-adults-and-teenagers-74886442.html",
           "startDate": "2000-08-01",
           "endDate": "2001-08-01",
-          "duration": moment.preciseDiff(moment("2000-08-01"), moment("2001-08-01")),
           "summary": "UI development using JSP",
           "highlights": [
             "Lead UI developer",
@@ -255,7 +255,6 @@ export default $.extend(true, {}, {}, {
           "website": "http://www.prnewswire.com/news-releases/go-network-and-whynot-creations-let-users-reach-out-with-1000-electronic-greeting-cards-73801862.html",
           "startDate": "1999-08-01",
           "endDate": "2000-08-01",
-          "duration": moment.preciseDiff(moment("1999-08-01"), moment("2000-08-01")),
           "summary": "Development and Maintenance of International websites (10 total)",
           "highlights": [
             "Lead developer for European sites (Spanish, French, German)"
@@ -267,7 +266,6 @@ export default $.extend(true, {}, {}, {
           "website": false,
           "startDate": "1996-09-01",
           "endDate": "2002-10-01",
-          "duration": moment.preciseDiff(moment("1999-08-01"), moment("2000-08-01")),
           "summary": "Development of ‘turnkey’ web solutions for small businesses",
           "highlights": [
             "Created website client that brought in over $75K featured on the KRON nightly news",
@@ -359,7 +357,7 @@ export default $.extend(true, {}, {}, {
             "Distinguished communication skills (public speaking, documentation. demos)"
           ]
         }
-      ],
+    ],
       "languages": [
         {
           "language": "Spanish",

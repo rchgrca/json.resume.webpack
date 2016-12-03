@@ -6,10 +6,10 @@ export default class Experience extends Component {
         return (
             <ul className="list-unstyled">
                 {this.props.model.work.map(function(o,i){
-                    var datesworked   = moment(o.startDate).format("MMM YYYY") + " - " + moment(o.endDate).format("MMM YYYY"),
-                           duration   = o.duration,
-                    durationformatted = duration[0] + ", " + duration[1];
-
+                    let endDate         = (o.endDate) ?  moment(o.endDate).format("MMM YYYY") : "Present",
+                        endDateDuration = (o.endDate) ? moment(o.endDate) : moment(),
+                        datesworked     = moment(o.startDate).format("MMM YYYY") + " - " + endDate,
+                           duration     = moment.preciseDiff(moment(o.startDate), endDateDuration);
                     return (
                         <li className="card card-nested clearfix" key={i}>
                             <div className="content">

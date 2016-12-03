@@ -8,7 +8,7 @@ export default class Content extends Component {
             <div className="card background-card">
                 <h4 className="text-uppercase text-bolder">Background</h4>
                 <hr/>
-                <Details model={this.props.model} content={this.props.section}/>
+                <Details model={this.props.model}/>
             </div>
         )
     }

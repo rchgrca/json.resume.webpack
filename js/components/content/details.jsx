@@ -10,9 +10,10 @@ import Day from './day.jsx'
 
 export default class Details extends Component {
     render() {
+        let section = this.props.model.basics.section;
         return (
             <div className="background-details">
-                {this.props.content.map((block,i) => {
+                {section.map((block,i) => {
                     var fonticon = "fa fa-lg fa-" + block.font;
                     return (
                         <div className="detail" id={block.section} key={i}>
