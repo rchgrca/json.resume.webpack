@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import $ from 'jquery';
 import resume from './models/resume'
 import FloatingNav from './components/floatingNav.jsx'
 import Card from './components/profile/card.jsx'
@@ -26,6 +27,23 @@ export default class App extends Component {
             </div>
         </div>
     );
+  }
+
+  componentDidMount(){
+      window.onload = function () {
+        var toggleFloatingMenu = function() {
+          $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+          $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+        };
+
+        $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+        $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+          e.preventDefault();
+          toggleFloatingMenu();
+        });
+        $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+      }
+
   }
 }
 
