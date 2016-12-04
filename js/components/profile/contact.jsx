@@ -5,7 +5,7 @@ export default class FloatingNav extends Component {
     render() {
         return (
             <div className="contact-details clearfix" id="contact">
-                {this.props.model.map(function(o,i) {
+                {this.props.model.map((o,i) => {
                     var fonticon = "fa fa-lg fa-" + o.icon;
                     return (
                         <div className="detail" key={i}>

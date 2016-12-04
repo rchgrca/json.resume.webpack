@@ -3,9 +3,10 @@ import { render } from 'react-dom';
 
 export default class Experience extends Component {
     render() {
+        let { model } = this.props;
         return (
             <ul className="list-unstyled">
-                {this.props.model.work.map(function(o,i){
+                {model.work.map((o,i) => {
                     let endDate         = (o.endDate) ?  moment(o.endDate).format("MMM YYYY") : "Present",
                         endDateDuration = (o.endDate) ? moment(o.endDate) : moment(),
                         datesworked     = moment(o.startDate).format("MMM YYYY") + " - " + endDate,
@@ -25,7 +26,7 @@ export default class Experience extends Component {
                                 </p>
                                 <p>{o.summary}</p>
                                 <ul>
-                                    {o.highlights.map(function(o,i){
+                                    {o.highlights.map((o,i) => {
                                         return (
                                             <li key={i}>{o}</li>
                                         )

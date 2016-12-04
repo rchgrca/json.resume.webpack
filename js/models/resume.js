@@ -120,6 +120,7 @@ export default $.extend(true, {}, {}, {
             "url": "http://www.linkedin.com/in/rchgrca"
           }
         ],
+
         "section": [
             {section: "about", font: "user"},
             {section: "work-experience", font: "building"},
@@ -377,10 +378,7 @@ export default $.extend(true, {}, {}, {
         }
       ],
       "philosophy": [
-        {
-          "language": "Spanish",
-          "fluency": "(speak, read, write)"
-        }
+        "If your dreams don’t scare you, they are too small."
       ],
       "day": [
         {

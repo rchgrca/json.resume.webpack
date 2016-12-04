@@ -3,11 +3,12 @@ import { render } from 'react-dom';
 
 export default class About extends Component {
     render() {
+        let model = this.props.model.basics;
         return (
             <div className="content">
-                {this.props.model.basics.summary}
+                {model.summary}
                 <ul className="highlights">
-                    {this.props.model.basics.highlights.map(function(o,i){
+                    {model.highlights.map((o,i) => {
                         return (
                             <li key={i}>{o}</li>
                         )

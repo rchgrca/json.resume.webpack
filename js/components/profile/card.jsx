@@ -6,11 +6,18 @@ import SocialLinks from './socialLinks.jsx'
 
 export default class ProfileCard extends Component {
     render() {
+        let { model } = this.props;
+        let contact = [
+            {icon: "location-arrow", detail: "Home", href:model.basics.location.map},
+            {icon: "phone", detail: "Phone", href:"tel:" + model.basics.phone},
+            {icon: "envelope", detail: "E-mail", href:"mailto:" + model.basics.email},
+            {icon: "link", detail: model.basics.website.value, href:model.basics.website.href}
+        ];
         return (
             <div className="card profile-card">
-                <Pic model={this.props.model} />
-                <Contact model={this.props.contact} />
-                <SocialLinks model={this.props.model} />
+                <Pic model={model} />
+                <Contact model={contact} />
+                <SocialLinks model={model} />
             </div>
         )
     }

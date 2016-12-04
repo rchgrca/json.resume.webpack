@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 
 export default class Education extends Component {
     render() {
-        var education = this.props.model.education[0],
+        let education = this.props.model.education[0],
         startDate = moment(education.startDate).format("MMM YYYY"),
         endDate = moment(education.endDate).format("MMM YYYY"),
         attended = startDate + " - " + endDate;

@@ -10,7 +10,8 @@ import Day from './day.jsx'
 
 export default class Details extends Component {
     render() {
-        let section = this.props.model.basics.section;
+        let { model }   = this.props;
+        let { section } = model.basics;
         return (
             <div className="background-details">
                 {section.map((block,i) => {
@@ -26,31 +27,31 @@ export default class Details extends Component {
                                 {(() => {
                                     if (block.section === "about"){
                                         return (
-                                            <About model={this.props.model} />
+                                            <About model={model} />
                                         )
                                     } else if (block.section === "work-experience") {
                                         return (
-                                            <Experience model={this.props.model} />
+                                            <Experience model={model} />
                                         )
                                     } else if (block.section === "skills") {
                                         return (
-                                            <Skills model={this.props.model} />
+                                            <Skills model={model} />
                                         )
                                     } else if (block.section === "education") {
                                         return (
-                                            <Education model={this.props.model} />
+                                            <Education model={model} />
                                         )
                                     } else if (block.section === "interests") {
                                         return (
-                                            <Interests model={this.props.model} />
+                                            <Interests model={model} />
                                         )
                                     } else if (block.section === "philosophy") {
                                         return (
-                                            <Philosophy model={this.props.model} />
+                                            <Philosophy model={model} />
                                         )
                                     } else if (block.section === "day") {
                                         return (
-                                            <Day model={this.props.model} />
+                                            <Day model={model} />
                                         )
                                     } else {
                                         // do nothing
