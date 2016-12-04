@@ -1,5 +1,5 @@
-//used in resume.js
-/*
+import moment from 'moment';
+
 (function(moment) {
     var STRINGS = {
         nodiff: '',
@@ -91,4 +91,3 @@
         return result.join(STRINGS.delimiter);
     };
 }(moment));
-*/

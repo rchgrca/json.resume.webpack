@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import moment from 'moment';
+import { preciseDiff } from '../../plugins/readable-range'
 
 export default class Experience extends Component {
     render() {

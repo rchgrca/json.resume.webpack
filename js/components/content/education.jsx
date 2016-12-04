@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import moment from 'moment';
 
 export default class Education extends Component {
     render() {
-        let education = this.props.model.education[0],
-        startDate = moment(education.startDate).format("MMM YYYY"),
+        var { education } = this.props.model;
+        education = education[0];
+
+        let startDate = moment(education.startDate).format("MMM YYYY"),
         endDate = moment(education.endDate).format("MMM YYYY"),
         attended = startDate + " - " + endDate;
 
