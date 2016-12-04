@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 export default $.extend(true, {}, {}, {
     model: {
       "basics": {
