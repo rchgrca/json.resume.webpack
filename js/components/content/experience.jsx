@@ -30,7 +30,7 @@ export default class Experience extends Component {
                                 <ul>
                                     {o.highlights.map((o,i) => {
                                         return (
-                                            <li key={i}>{o}</li>
+                                            <li key={i} dangerouslySetInnerHTML={{__html: o}}></li>
                                         )
                                     })}
                                 </ul>
