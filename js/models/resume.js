@@ -217,8 +217,52 @@ export default $.extend(true, {}, {}, {
       ],
       "day": [
         {
-          "language": "Spanish",
-          "fluency": "(speak, read, write)"
+            "color": "#0033CC",
+            "highlight": "#CCCCCC",
+            "label": "Commute",
+            "value": 2.5
+        },
+        {
+            "color": "#0099FF",
+            "highlight": "#CCCCCC",
+            "label": "Sleep",
+            "value": 8
+        },
+        {
+            "color": "#0000CC",
+            "highlight": "#CCCCCC",
+            "label": "Organize",
+            "value": 2
+        },
+        {
+            "color": "#0000FF",
+            "highlight": "#CCCCCC",
+            "label": "Meditate",
+            "value": 0.5
+        },
+        {
+            "color": "#003399",
+            "highlight": "#CCCCCC",
+            "label": "Meetings",
+            "value": 1
+        },
+        {
+            "color": "#0033CC",
+            "highlight": "#CCCCCC",
+            "label": "Code",
+            "value": 7
+        },
+        {
+            "color": "#0033FF",
+            "highlight": "#CCCCCC",
+            "label": "Family",
+            "value": 2
+        },
+        {
+            "color": "#003399",
+            "highlight": "#CCCCCC",
+            "label": "Self",
+            "value": 1
         }
       ]
     }
