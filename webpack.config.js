@@ -3,6 +3,7 @@ var path = require('path');
 
 var BUILD_DIR = path.resolve(__dirname, 'js');
 var APP_DIR = path.resolve(__dirname, 'js');
+var SPEC_DIR = path.resolve(__dirname, 'spec');
 
 var config = {
     entry: APP_DIR + '/index.jsx',
@@ -13,11 +14,32 @@ var config = {
     module : {
         loaders : [
             {
-              test : /\.jsx?/,
-              include : APP_DIR,
-              loader : 'babel'
+                test : /\.jsx?/,
+                include : [APP_DIR],
+                exclude : /(node_modules)/,
+                loader : 'babel'
             }
+            // ,
+            // {
+            //     test : /\.jsx?/,
+            //     include : APP_DIR,
+            //     exclude : /(node_modules)/,
+            //     loader : 'imports'
+            // }
+            // ,
+            // {
+            //     test : /\.jsx?/,
+            //     include : APP_DIR,
+            //     exclude : /(node_modules)/,
+            //     loader : 'exports'
+            // }
         ]
+    },
+    externals: {
+      'cheerio': 'window',
+      'react/addons': true,
+      'react/lib/ExecutionEnvironment': true,
+      'react/lib/ReactContext': true
     },
     plugins: [
         new webpack.DefinePlugin({
