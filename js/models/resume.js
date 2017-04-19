@@ -112,7 +112,8 @@ export default $.extend(true, {}, {}, {
             "Recipient of ‘You Rock’ Award and mentored seven junior level engineers",
             "Tutored English to Spanish-speaking Yahoo! custodians, Captain Yahoo! Soccer Team"
           ]
-        },
+        }
+        /*,
         {
           "company": "eBay, Inc.",
           "position": "Contract Developer",
@@ -182,6 +183,7 @@ export default $.extend(true, {}, {}, {
             "Developed a customer support site for the Voysys Corporation reducing technical support calls by 20%"
           ]
         }
+        */
       ],
       "education": [
         {
@@ -220,19 +222,19 @@ export default $.extend(true, {}, {}, {
             "color": "#0033CC",
             "highlight": "#CCCCCC",
             "label": "Commute",
-            "value": 2.5
+            "value": 2
         },
         {
             "color": "#0099FF",
             "highlight": "#CCCCCC",
             "label": "Sleep",
-            "value": 8
+            "value": 7
         },
         {
             "color": "#0000CC",
             "highlight": "#CCCCCC",
             "label": "Organize",
-            "value": 2
+            "value": 1
         },
         {
             "color": "#0000FF",
@@ -244,25 +246,25 @@ export default $.extend(true, {}, {}, {
             "color": "#003399",
             "highlight": "#CCCCCC",
             "label": "Meetings",
-            "value": 1
+            "value": 1.5
         },
         {
             "color": "#0033CC",
             "highlight": "#CCCCCC",
             "label": "Code",
-            "value": 7
+            "value": 6
         },
         {
             "color": "#0033FF",
             "highlight": "#CCCCCC",
             "label": "Family",
-            "value": 2
+            "value": 3
         },
         {
             "color": "#003399",
             "highlight": "#CCCCCC",
             "label": "Self",
-            "value": 1
+            "value": 3
         }
       ]
     }
