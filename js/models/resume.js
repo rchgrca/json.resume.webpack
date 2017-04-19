@@ -202,12 +202,12 @@ export default $.extend(true, {}, {}, {
           {
             "name": "The Effective Engineer",
             "keywords": [],
-            "href":"http://effectiveengineer.com"
+            "href":"http://www.theeffectiveengineer.com/"
           },
           {
             "name": "The Pragmatic Programmer",
             "keywords": [],
-            "href":"https://pragmaticprogrammer"
+            "href":"https://pragprog.com/book/tpp/the-pragmatic-programmer"
           }
       ],
       "languages": [
