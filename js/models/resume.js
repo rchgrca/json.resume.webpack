@@ -46,7 +46,7 @@ export default $.extend(true, {}, {}, {
           "position": "Sr. Frontend Engineer",
           "website": "http://euclidanalytics.com",
           "startDate": "2015-08-15",
-          "endDate": false,
+          "endDate": "2017-04-18",
           "summary": "Data Visualization",
           "highlights": [
             "Created/maintained a web/mobile application for the largest sensor network in the world",
