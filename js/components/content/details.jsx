@@ -13,6 +13,7 @@ export default class Details extends Component {
     render() {
         let { model }   = this.props;
         let { section } = model.basics;
+        console.log(section)
         return (
             <div className="background-details">
                 {section.map((block,i) => {
@@ -26,7 +27,6 @@ export default class Details extends Component {
                             <div className="info">
                                 <h4 className="title text-uppercase">{block.section}</h4>
                                 {(() => {
-
                                     switch(block.section){
                                         case "about":
                                             return <About model={model} />

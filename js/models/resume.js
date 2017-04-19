@@ -52,7 +52,8 @@ export default $.extend(true, {}, {}, {
           "highlights": [
             "Created/maintained a web/mobile application for the largest sensor network in the world",
             "Stack compromised of React/Backbone/Redux/Webpack/SCSS, Ruby On Rails, and MySQL",
-            "Test driven development with Karma/Jasmine/RSPEC in lieu of QA team"
+            "Test driven development with Karma/Jasmine/RSPEC in lieu of QA team",
+            "Recipient of \"Euclid Above and Beyond Award\""
           ]
         },
         {
