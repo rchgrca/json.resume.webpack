@@ -5,6 +5,7 @@ import Experience from './experience.jsx'
 import Skills from './skills.jsx'
 import Education from './education.jsx'
 import Interests from './interests.jsx'
+import Books from './books.jsx'
 import Philosophy from './philosophy.jsx'
 import Day from './day.jsx'
 
@@ -25,36 +26,32 @@ export default class Details extends Component {
                             <div className="info">
                                 <h4 className="title text-uppercase">{block.section}</h4>
                                 {(() => {
-                                    if (block.section === "about"){
-                                        return (
-                                            <About model={model} />
-                                        )
-                                    } else if (block.section === "work-experience") {
-                                        return (
-                                            <Experience model={model} />
-                                        )
-                                    } else if (block.section === "skills") {
-                                        return (
-                                            <Skills model={model} />
-                                        )
-                                    } else if (block.section === "education") {
-                                        return (
-                                            <Education model={model} />
-                                        )
-                                    } else if (block.section === "interests") {
-                                        return (
-                                            <Interests model={model} />
-                                        )
-                                    } else if (block.section === "philosophy") {
-                                        return (
-                                            <Philosophy model={model} />
-                                        )
-                                    } else if (block.section === "day") {
-                                        return (
-                                            <Day model={model} />
-                                        )
-                                    } else {
-                                        // do nothing
+
+                                    switch(block.section){
+                                        case "about":
+                                            return <About model={model} />
+                                            break;
+                                        case "work-experience":
+                                            return <Experience model={model} />
+                                            break;
+                                        case "skills":
+                                            return <Skills model={model} />
+                                            break;
+                                        case "education":
+                                            return <Education model={model} />
+                                            break;
+                                        case "books":
+                                            return <Books model={model} />
+                                            break;
+                                        case "interests":
+                                            return <Interests model={model} />
+                                            break;
+                                        case "philosophy":
+                                            return <Philosophy model={model} />
+                                            break;
+                                        case "day":
+                                            return <Day model={model} />
+                                            break;
                                     }
                                 })()}
                             </div>

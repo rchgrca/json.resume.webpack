@@ -66,7 +66,7 @@ body {
 #interests .card:first-child {
     padding: 10px 10px 0;
 }
-#interests .card:last-child {
+#interests .card:last-child, #books .card:last-child {
     border: none;
     padding: 0 10px;
 }

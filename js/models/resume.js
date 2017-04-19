@@ -35,6 +35,7 @@ export default $.extend(true, {}, {}, {
             {section: "work-experience", font: "building"},
             //{section: "skills", font: "code"},
             {section: "education", font: "mortar-board"},
+            {section: "books", font: "book"},
             {section: "interests", font: "heart"},
             {section: "philosophy", font: "lightbulb-o"},
             {section: "day", font: "clock-o"}
@@ -195,6 +196,18 @@ export default $.extend(true, {}, {}, {
           "gpa": "0.0",
           "courses": []
         }
+      ],
+      "books": [
+          {
+            "name": "The Effective Engineer",
+            "keywords": [],
+            "href":"http://effectiveengineer.com"
+          },
+          {
+            "name": "The Pragmatic Programmer",
+            "keywords": [],
+            "href":"https://pragmaticprogrammer"
+          }
       ],
       "languages": [
         {
