@@ -13,7 +13,9 @@ export default class Details extends Component {
     render() {
         let { model }   = this.props;
         let { section } = model.basics;
-        console.log(section)
+
+
+
         return (
             <div className="background-details">
                 {section.map((block,i) => {
@@ -27,11 +29,12 @@ export default class Details extends Component {
                             <div className="info">
                                 <h4 className="title text-uppercase">{block.section}</h4>
                                 {(() => {
+                                    this.getDetailsComponents(section)
                                     switch(block.section){
                                         case "about":
                                             return <About model={model} />
                                             break;
-                                        case "work-experience":
+                                        case "experience":
                                             return <Experience model={model} />
                                             break;
                                         case "skills":
@@ -60,5 +63,11 @@ export default class Details extends Component {
                 })}
             </div>
         )
+    }
+
+    getDetailsComponents(section){
+        section.map((element) => {
+            console.log(element)
+        })
     }
 }

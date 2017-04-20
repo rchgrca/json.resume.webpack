@@ -32,7 +32,7 @@ export default $.extend(true, {}, {}, {
 
         "section": [
             {section: "about", font: "user"},
-            {section: "work-experience", font: "building"},
+            {section: "experience", font: "building"},
             //{section: "skills", font: "code"},
             {section: "education", font: "mortar-board"},
             {section: "books", font: "book"},
