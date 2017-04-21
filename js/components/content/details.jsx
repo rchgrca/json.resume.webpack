@@ -11,10 +11,8 @@ import Day from './day.jsx'
 
 export default class Details extends Component {
     render() {
-        let { model }   = this.props;
-        let { section } = model.basics;
-
-
+        var { model }   = this.props;
+        var { section } = model.basics;
 
         return (
             <div className="background-details">
@@ -28,35 +26,7 @@ export default class Details extends Component {
                             </div>
                             <div className="info">
                                 <h4 className="title text-uppercase">{block.section}</h4>
-                                {(() => {
-                                    this.getDetailsComponents(section)
-                                    switch(block.section){
-                                        case "about":
-                                            return <About model={model} />
-                                            break;
-                                        case "experience":
-                                            return <Experience model={model} />
-                                            break;
-                                        case "skills":
-                                            return <Skills model={model} />
-                                            break;
-                                        case "education":
-                                            return <Education model={model} />
-                                            break;
-                                        case "books":
-                                            return <Books model={model} />
-                                            break;
-                                        case "interests":
-                                            return <Interests model={model} />
-                                            break;
-                                        case "philosophy":
-                                            return <Philosophy model={model} />
-                                            break;
-                                        case "day":
-                                            return <Day model={model} />
-                                            break;
-                                    }
-                                })()}
+                                {React.createElement(this.getElement(block.section),{model})}
                             </div>
                         </div>
                     )
@@ -65,9 +35,20 @@ export default class Details extends Component {
         )
     }
 
-    getDetailsComponents(section){
-        section.map((element) => {
-            console.log(element)
-        })
+    getElement(element){
+        return {
+            "About":About,
+            "Experience":Experience,
+            "Skills":Skills,
+            "Education":Education,
+            "Interests":Interests,
+            "Books":Books,
+            "Philosophy":Philosophy,
+            "Day":Day
+        }[this.capitalize(element)]
+    }
+
+    capitalize(element){
+        return element.charAt(0).toUpperCase() + element.slice(1);
     }
 }
