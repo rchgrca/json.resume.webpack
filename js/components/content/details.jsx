@@ -37,14 +37,14 @@ export default class Details extends Component {
 
     getElement(element){
         return {
-            "About":About,
-            "Experience":Experience,
-            "Skills":Skills,
-            "Education":Education,
-            "Interests":Interests,
-            "Books":Books,
-            "Philosophy":Philosophy,
-            "Day":Day
+            About,
+            Experience,
+            Skills,
+            Education,
+            Interests,
+            Books,
+            Philosophy,
+            Day
         }[this.capitalize(element)]
     }
 
