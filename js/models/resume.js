@@ -79,7 +79,7 @@ export default $.extend(true, {}, {}, {
           "highlights": [
             "Single-handedly conceived, designed, architected, & developed full stack of a polling based, real-time web and mobile-web based application from conception to release",
             "Recognized that Node.js was a better solution for our real-time application, authorized/supervised team to convert our product including Backbone.js, Handlebars.js, and LESS",
-            "Featured in video blog by <a href=\"http://www.youtube.com/watch?v=UmCA69ciyzo\">Robert Scoble</a>",
+            "Featured in video blog by <a href='http://www.youtube.com/watch?v=UmCA69ciyzo'>Robert Scoble</a>",
             "Featured startup by Manos Accelerator, first cohort",
             "Single-handedly recruited and hired small team of developers & product managers to create application"
           ]
