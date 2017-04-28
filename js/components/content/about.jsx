@@ -8,13 +8,17 @@ export default class About extends Component {
             <div className="content">
                 {model.summary}
                 <ul className="highlights">
-                    {model.highlights.map((o,i) => {
-                        return (
-                            <li key={i}>{o}</li>
-                        )
-                    })}
+                    {this.getListItems(model)}
                 </ul>
             </div>
         )
+    }
+
+    getListItems(model){
+        model.highlights.map((o,i) => {
+            return (
+                <li key={i}>{o}</li>
+            )
+        })
     }
 }
