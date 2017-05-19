@@ -53,6 +53,7 @@ export default $.extend(true, {}, {}, {
             "Created/maintained a web/mobile application for the largest sensor network in the world",
             "Stack compromised of React/Backbone/Redux/Webpack/SCSS, Ruby On Rails, and MySQL",
             "Test driven development with Karma/Jasmine/RSPEC in lieu of QA team",
+            "Continuous integration with CircleCI",
             "Recipient of \"Euclid Above and Beyond Award\""
           ]
         },
@@ -62,10 +63,10 @@ export default $.extend(true, {}, {}, {
           "website": "http://quickbooks.intuit.com.au",
           "startDate": "2012-02-01",
           "endDate": "2015-07-15",
-          "summary": "Adobe CQ5 Component Development for Intuit",
+          "summary": "Adobe Experience Manager (CQ5) Component Development for Intuit",
           "highlights": [
             "Lead Developer for “on-boarding” of JSP pages to CQ5/Ruby on Rails environment for Pro Tax Group",
-            "Created numerous CQ5 “responsive” components used by marketing to build customizable web pages",
+            "Created numerous CQ5 “responsive web design” components used by marketing to build customizable web pages",
             "Improved page performance from 12 secs to 3 secs"
           ]
         },
