@@ -5,8 +5,20 @@ import resume from './models/resume'
 import FloatingNav from './components/floatingNav.jsx'
 import Card from './components/profile/card.jsx'
 import Content from './components/content/content.jsx'
+import axios from 'axios'
 
 export default class App extends Component {
+  constructor(props) {
+      super(props)
+      this.state = {
+          currently:{
+              summary: false,
+              temperature: false,
+              icon: false
+          }
+      }
+  }
+
   render() {
     let model = resume.model;
     return (
@@ -21,12 +33,16 @@ export default class App extends Component {
                         <Card model={model}/>
                     </section>
                     <section className="col-md-9 card-wrapper content-card-wrapper pull-right">
-                        <Content model={model} section={model.basics.section} />
+                        <Content model={model} section={model.basics.section} currently={this.state.currently}/>
                     </section>
                 </div>
             </div>
         </div>
     );
+  }
+
+  componentWillMount(){
+      this.fetchWeatherData()
   }
 
   componentDidMount(){
@@ -44,6 +60,26 @@ export default class App extends Component {
         $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
       }
 
+  }
+
+  getApiUrl(){
+      let crossorigin = 'http://crossorigin.me',
+      domain = 'https://api.darksky.net/forecast',
+      apikey = '5bb3f38d7e0ad6f3833ee2b61a26a5df',
+      geolocation = '37.571417,-121.965054'
+
+      return `${crossorigin}/${domain}/${apikey}/${geolocation}`
+  }
+
+  fetchWeatherData(){
+      axios.get(this.getApiUrl(),{})
+      .then(function(response){
+          this.setState({
+              currently: response.data.currently
+          })
+      }.bind(this)).catch(function(){
+          this.setResultsError()
+    }.bind(this))
   }
 }
 
