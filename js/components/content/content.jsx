@@ -14,7 +14,6 @@ export default class Content extends Component {
                 <h4 className="text-uppercase text-bolder">
                     <span>Background</span>
                     <span className="weather">
-                        <span>{summary}</span>
                         <span>{temperature}</span>
                         <i className={icon}></i>
                     </span>
