@@ -78,7 +78,7 @@ export default class App extends Component {
               currently: response.data.currently
           })
       }.bind(this)).catch(function(){
-          this.setResultsError()
+          console.log('Error: Crossorigin.me, please refresh')
     }.bind(this))
   }
 }
