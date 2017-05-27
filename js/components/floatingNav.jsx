@@ -3,8 +3,9 @@ import { render } from 'react-dom';
 
 export default class FloatingNav extends Component {
     render() {
+        let { bgColor, borderCard } = this.props
         return (
-            <ul className="list-unstyled">
+            <ul className={`list-unstyled ${bgColor} ${borderCard}`}>
                 {this.props.model.map(function(o,i) {
                     var section = "#" + o.section,
                       fonticon = "fa fa-" + o.font;

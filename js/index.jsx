@@ -15,25 +15,43 @@ export default class App extends Component {
               summary: false,
               temperature: false,
               icon: false
-          }
+          },
+          enableBg:false
       }
   }
 
   render() {
-    let model = resume.model;
+    let model = resume.model,
+    backgroundPage = this.state.enableBg ? "lightskyblue" : "",
+    backgroundCard = this.state.enableBg ? "lightyellow" : "",
+    borderCard = this.state.enableBg ? "darkorange" : ""
+
     return (
         <div>
-            <div className="container-fluid">
+            <div className={`containerFluid ${backgroundPage}`}>
                 <div className="row main clearfix">
-                    <a href="#" className="js-floating-nav-trigger floating-nav-trigger"><i className="fa fa-bars"></i><span className="close-icon">&times;</span></a>
+                    <a href="#" className={`js-floating-nav-trigger floating-nav-trigger ${backgroundCard} ${borderCard}`}>
+                        <i className="fa fa-bars"></i>
+                        <span className="close-icon">&times;</span>
+                    </a>
                     <nav className="floating-nav js-floating-nav">
-                        <FloatingNav model={model.basics.section} />
+                        <FloatingNav
+                            model={model.basics.section}
+                            borderCard={borderCard}
+                            bgColor={backgroundCard}/>
                     </nav>
                     <section className="col-md-3 card-wrapper profile-card-wrapper affix">
-                        <Card model={model}/>
+                        <Card model={model}
+                            handleClick={this.handleClickImage.bind(this)}
+                            borderCard={borderCard}
+                            bgColor={backgroundCard}/>
                     </section>
                     <section className="col-md-9 card-wrapper content-card-wrapper pull-right">
-                        <Content model={model} section={model.basics.section} currently={this.state.currently}/>
+                        <Content model={model}
+                            section={model.basics.section}
+                            currently={this.state.currently}
+                            borderCard={borderCard}
+                            bgColor={backgroundCard}/>
                     </section>
                 </div>
             </div>
@@ -80,6 +98,13 @@ export default class App extends Component {
       }.bind(this)).catch(function(){
           console.log('Error: Crossorigin.me, please refresh')
     }.bind(this))
+  }
+
+  handleClickImage(){
+      let enableBg = this.state.enableBg ? false : true
+      this.setState({
+          enableBg
+      })
   }
 }
 
