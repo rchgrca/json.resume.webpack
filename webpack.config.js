@@ -47,7 +47,13 @@ var config = {
           'process.env': {
             NODE_ENV: JSON.stringify('production')
           }
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false // https://github.com/webpack/webpack/issues/1496
+            }
+        }),
+        new webpack.optimize.AggressiveMergingPlugin()//Merge chunks
     ]
 };
 
