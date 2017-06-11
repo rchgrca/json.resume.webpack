@@ -7,6 +7,7 @@ var SPEC_DIR = path.resolve(__dirname, 'spec');
 
 var config = {
     entry: APP_DIR + '/index.jsx',
+    devtool: 'source-map',
     output: {
         path: BUILD_DIR,
         filename: 'bundle.js'
@@ -46,11 +47,6 @@ var config = {
           'process.env': {
             NODE_ENV: JSON.stringify('production')
           }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false // https://github.com/webpack/webpack/issues/1496
-            }
         })
     ]
 };
