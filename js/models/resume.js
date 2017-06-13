@@ -246,55 +246,13 @@ export default $.extend(true, {}, {}, {
       "philosophy": [
         "If your dreams don’t scare you, they are too small."
       ],
-      "day": [
-        {
-            "color": "#0033CC",
-            "highlight": "#CCCCCC",
-            "label": "Commute",
-            "value": 2
-        },
-        {
-            "color": "#0099FF",
-            "highlight": "#CCCCCC",
-            "label": "Sleep",
-            "value": 7
-        },
-        {
-            "color": "#0000CC",
-            "highlight": "#CCCCCC",
-            "label": "Organize",
-            "value": 1
-        },
-        {
-            "color": "#0000FF",
-            "highlight": "#CCCCCC",
-            "label": "Meditate",
-            "value": 0.5
-        },
-        {
-            "color": "#003399",
-            "highlight": "#CCCCCC",
-            "label": "Meetings",
-            "value": 1.5
-        },
-        {
-            "color": "#0033CC",
-            "highlight": "#CCCCCC",
-            "label": "Code",
-            "value": 6
-        },
-        {
-            "color": "#0033FF",
-            "highlight": "#CCCCCC",
-            "label": "Family",
-            "value": 3
-        },
-        {
-            "color": "#003399",
-            "highlight": "#CCCCCC",
-            "label": "Self",
-            "value": 3
-        }
-      ]
+      "day": {
+          labels: ["Commute", "Sleep", "Organize", "Meditate", "Meetings", "Code", "Family", "Self"],
+          datasets: [{
+              data: [2, 7, 1, .5, 1.5, 6, 3, 3],
+              backgroundColor: ["maroon", "#0544d3", "#f05b4f", "#f4c63d", "#d17905", "#6b0392", "#59922b", "#d70206"],
+              hoverBackgroundColor: ["maroon", "#0544d3", "#f05b4f", "#f4c63d", "#d17905", "#6b0392", "#59922b", "#d70206"]
+          }]
+      }
     }
 });

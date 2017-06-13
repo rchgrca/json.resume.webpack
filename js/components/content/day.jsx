@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import _ from 'underscore';
-import { Doughnut } from 'react-chartjs';
+import { Doughnut } from 'react-chartjs-2';
 
 export default class Day extends Component {
     render() {
-        var { day } = this.props.model;
-        var chartOptions = {
+        var { day } = this.props.model,
+        chartOptions = {
             responsive: true
         }
         return (
