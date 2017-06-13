@@ -247,12 +247,20 @@ export default $.extend(true, {}, {}, {
         "If your dreams don’t scare you, they are too small."
       ],
       "day": {
-          labels: ["Commute", "Sleep", "Organize", "Meditate", "Meetings", "Code", "Family", "Self"],
+          labels: ["Sleep", "Code", "Family", "Self", "Commute", "Meetings", "Organize", "Meditate"],
           datasets: [{
-              data: [2, 7, 1, .5, 1.5, 6, 3, 3],
-              backgroundColor: ["maroon", "#0544d3", "#f05b4f", "#f4c63d", "#d17905", "#6b0392", "#59922b", "#d70206"],
-              hoverBackgroundColor: ["maroon", "#0544d3", "#f05b4f", "#f4c63d", "#d17905", "#6b0392", "#59922b", "#d70206"]
-          }]
+              data: [7, 6, 3, 3, 2, 1.5, 1, .5],
+              backgroundColor: ["#0544d3", "#6b0392", "#59922b", "#d70206", "maroon", "#f05b4f", "#f4c63d", "#d17905"],
+              hoverBackgroundColor: ["#0544d3", "#6b0392", "#59922b", "#d70206", "maroon", "#f05b4f", "#f4c63d", "#d17905"],
+              borderWidth: [0,0,0,0,0,0,0,0]
+          }],
+          options: {
+              responsive: true,
+              cutoutPercentage: 0,
+              animation: {
+                  animateScale: true
+              }
+          }
       }
     }
 });

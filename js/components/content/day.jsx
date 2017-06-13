@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Doughnut } from 'react-chartjs-2';
+import { Pie } from 'react-chartjs-2';
 
 export default class Day extends Component {
     render() {
-        var { day } = this.props.model,
-        chartOptions = {
-            responsive: true
-        }
+        var { day } = this.props.model
         return (
             <div className="content">
                 <ul className="list-unstyled">
@@ -15,7 +12,7 @@ export default class Day extends Component {
                         <div className="content">
                             <p className="clear-margin relative">
                                 <div>Activities in hours:</div>
-                                <Doughnut data={day} options={chartOptions}/>
+                                <Pie data={day} options={day.options}/>
                             </p>
 
                             <i></i>
