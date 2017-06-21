@@ -11,8 +11,7 @@ export default $.extend(true, {}, {}, {
         "website": {"value":"Portfolio","href":"http://rchgrca.io"},
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
-          "React/Backbone/Redux/Webpack, Ruby on Rails, SCSS, Karma/Jasmine/RSPEC, MySQL",
-          "Web and Mobile Web applications"
+          "React/Backbone/Redux/Webpack, Ruby on Rails, SCSS, Karma/Jasmine/RSPEC, MySQL"
         ],
         "location": {
           "address": "38648 Dow Ct.",
