@@ -15,7 +15,7 @@ export default class About extends Component {
     }
 
     getListItems(model){
-        model.highlights.map((o,i) => {
+        return model.highlights.map((o,i) => {
             return (
                 <li key={i}>{o}</li>
             )

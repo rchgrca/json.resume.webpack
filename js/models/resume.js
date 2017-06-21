@@ -12,7 +12,7 @@ export default $.extend(true, {}, {}, {
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
           "React/Backbone/Redux/Webpack, Ruby on Rails, SCSS, Karma/Jasmine/RSPEC, MySQL",
-          "Real-time web and mobile-web applications"
+          "Web and Mobile Web applications"
         ],
         "location": {
           "address": "38648 Dow Ct.",
@@ -64,10 +64,11 @@ export default $.extend(true, {}, {}, {
           "endDate": "2017-04-18",
           "summary": "Data Visualization",
           "highlights": [
-            "Created/maintained a web/mobile application for the largest sensor network in the world",
+            "Created/maintained a web application that physical store customer behavior",
             "Stack compromised of React/Backbone/Redux/Webpack/SCSS, Ruby On Rails, and MySQL",
             "Test driven development with Karma/Jasmine/RSPEC in lieu of QA team",
             "Continuous integration with CircleCI",
+            "Improved page performance from 9 secs to 3 secs",
             "Recipient of \"Euclid Above and Beyond Award\""
           ]
         },
