@@ -11,7 +11,7 @@ export default $.extend(true, {}, {}, {
         "website": {"value":"Portfolio","href":"http://rchgrca.io"},
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
-          "React/Backbone/Redux/Webpack, Ruby on Rails, SCSS, Karma/Jasmine/RSPEC, MySQL"
+          "React, Backbone, Redux, Webpack, Ruby on Rails, SASS, Karma/Jasmine/RSPEC, MySQL, TDD, Git, Mapbox, Highcharts"
         ],
         "location": {
           "address": "38648 Dow Ct.",
@@ -63,11 +63,13 @@ export default $.extend(true, {}, {}, {
           "endDate": "2017-04-18",
           "summary": "Data Visualization",
           "highlights": [
-            "Created/maintained a web application that physical store customer behavior",
-            "Stack compromised of React/Backbone/Redux/Webpack/SCSS, Ruby On Rails, and MySQL",
-            "Test driven development with Karma/Jasmine/RSPEC in lieu of QA team",
+            "Created/maintained a single page web application with metrics describing physical store customer identity and behavior",
+            "Test Driven Development (TDD) with Karma/Jasmine/RSPEC in lieu of QA team",
             "Continuous integration with CircleCI",
+            "Successfully transitioned Backbone SPA to React/Redux",
+            "Created multiple custom WiFi portals capturing 10M identifiable customers from their visits",
             "Improved page performance from 9 secs to 3 secs",
+            "Led several engineering book clubs for training and knowledge sharing",
             "Recipient of \"Euclid Above and Beyond Award\""
           ]
         },
