@@ -11,7 +11,7 @@ export default $.extend(true, {}, {}, {
         "website": {"value":"Portfolio","href":"http://rchgrca.io"},
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
-          "React, Backbone, Redux, Webpack, Ruby on Rails, SASS, Karma/Jasmine/RSPEC, MySQL, TDD, Git, Mapbox, Highcharts"
+          "React, Backbone, Redux, Webpack, Ruby on Rails, SASS, Karma/Jasmine/RSPEC, MySQL, TDD, Git, Mapbox, Highcharts, Responsive Web Design"
         ],
         "location": {
           "address": "38648 Dow Ct.",
@@ -61,14 +61,14 @@ export default $.extend(true, {}, {}, {
           "website": "http://euclidanalytics.com",
           "startDate": "2015-08-15",
           "endDate": "2017-04-18",
-          "summary": "Data Visualization",
+          "summary": "Data Visualization describing physical store customer identity and behavior",
           "highlights": [
-            "Created/maintained a single page web application with metrics describing physical store customer identity and behavior",
-            "Test Driven Development (TDD) with Karma/Jasmine/RSPEC in lieu of QA team",
-            "Continuous integration with CircleCI",
-            "Successfully transitioned Backbone SPA to React/Redux",
+            "Created/maintained a single page application and transitioned it successfully from Backbone to React",
+            "Test Driven Development (TDD) with Karma/Jasmine/RSPEC",
             "Created multiple custom WiFi portals capturing 10M identifiable customers from their visits",
             "Improved page performance from 9 secs to 3 secs",
+            "Envisioned and created several features not solicited by product management:  store distance tooltip",
+            "Documented all engineering processes:  on-boarding, best practices, architecture",
             "Led several engineering book clubs for training and knowledge sharing",
             "Recipient of \"Euclid Above and Beyond Award\""
           ]
