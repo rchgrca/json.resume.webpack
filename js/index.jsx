@@ -29,7 +29,7 @@ export default class App extends Component {
     return (
         <div>
             <div className={`containerFluid ${backgroundPage}`}>
-                <div className="row main clearfix">
+                <div className="main clearfix">
                     <a href="#" className={`js-floating-nav-trigger floating-nav-trigger ${backgroundCard} ${borderCard}`}>
                         <i className="fa fa-bars"></i>
                         <span className="close-icon">&times;</span>
