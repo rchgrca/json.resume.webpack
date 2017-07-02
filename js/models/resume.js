@@ -11,7 +11,8 @@ export default $.extend(true, {}, {}, {
         "website": {"value":"Portfolio","href":"http://rchgrca.io"},
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
-          "React, Backbone, Redux, Webpack, Ruby on Rails, SASS, Karma/Jasmine/RSPEC, MySQL, TDD, Git, Mapbox, Highcharts, Responsive Web Design"
+          "React, Redux, Webpack, Ruby on Rails, SASS, Jasmine, Karma, RSpec, MySQL, Backbone, Handlebars",
+          "Test Driven Development, Responsive Web Design, Mapbox, Highcharts, Auth0, Liquid, postMessage, Heroku, Git"
         ],
         "location": {
           "address": "38648 Dow Ct.",
@@ -64,10 +65,9 @@ export default $.extend(true, {}, {}, {
           "summary": "Data Visualization describing physical store customer identity and behavior",
           "highlights": [
             "Created/maintained a single page application and transitioned it successfully from Backbone to React",
-            "Test Driven Development (TDD) with Karma/Jasmine/RSPEC",
-            "Created multiple custom WiFi portals capturing 10M identifiable customers from their visits",
-            "Improved page performance from 9 secs to 3 secs",
-            "Envisioned and created several features not solicited by product management:  store distance tooltip",
+            "Created several custom WiFi portals capturing 10M identifiable customers from their visits",
+            "Improved page performance from 9 seconds to 2 seconds",
+            "Envisioned and created several features not solicited by product management:  Mapbox tooltip showing store distance",
             "Documented all engineering processes:  on-boarding, best practices, architecture",
             "Led several engineering book clubs for training and knowledge sharing",
             "Recipient of \"Euclid Above and Beyond Award\""
