@@ -6,17 +6,19 @@ export default class Interests extends Component {
         let { interests } = this.props.model;
         return (
             <div className="content">
-                <ul className="list-unstyled">
-                    {interests.map((o,i) => {
-                        return (
-                            <li className="card card-nested" key={i}>
-                                <p><strong><a href={o.href} target="_blank">{o.name}</a></strong></p>
-                                <div className="space-top labels"></div>
-                            </li>
-                        )
-                    })}
-                </ul>
+                <ul className="list-unstyled">{this.getInterests(interests)}</ul>
             </div>
         )
+    }
+
+    getInterests(interests){
+        return interests.map((o,i) => {
+            return (
+                <li className="card card-nested" key={i}>
+                    <p><strong><a href={o.href} target="_blank">{o.name}</a></strong></p>
+                    <div className="space-top labels"></div>
+                </li>
+            )
+        })
     }
 }

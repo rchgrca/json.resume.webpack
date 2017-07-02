@@ -7,16 +7,20 @@ export default class Interests extends Component {
         return (
             <div className="content">
                 <ul className="list-unstyled">
-                    {books.map((o,i) => {
-                        return (
-                            <li className="card card-nested" key={i}>
-                                <p><strong><a href={o.href} target="_blank">{o.name}</a></strong></p>
-                                <div className="space-top labels"></div>
-                            </li>
-                        )
-                    })}
+                    {this.getBooks(books)}
                 </ul>
             </div>
         )
+    }
+
+    getBooks(books){
+        return books.map((o,i) => {
+            return (
+                <li className="card card-nested" key={i}>
+                    <p><strong><a href={o.href} target="_blank">{o.name}</a></strong></p>
+                    <div className="space-top labels"></div>
+                </li>
+            )
+        })
     }
 }

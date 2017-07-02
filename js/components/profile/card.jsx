@@ -8,10 +8,10 @@ export default class ProfileCard extends Component {
     render() {
         let { model, handleClick, bgColor, borderCard } = this.props
         let contact = [
-            {icon: "location-arrow", detail: "Home", href:model.basics.location.map},
-            {icon: "phone", detail: "Phone", href:"tel:" + model.basics.phone},
-            {icon: "envelope", detail: "E-mail", href:"mailto:" + model.basics.email},
-            {icon: "link", detail: model.basics.website.value, href:model.basics.website.href}
+            {icon: "location-arrow", detail: "Home", href: model.basics.location.map},
+            {icon: "phone", detail: "Phone", href: `tel: ${model.basics.phone}`},
+            {icon: "envelope", detail: "E-mail", href: `mailto: ${model.basics.email}`},
+            {icon: "link", detail: model.basics.website.value, href: model.basics.website.href}
         ];
         return (
             <div className={`card profile-card ${bgColor} ${borderCard}`}>

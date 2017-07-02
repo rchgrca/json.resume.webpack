@@ -111,8 +111,8 @@ export default $.extend(true, {}, {}, {
           "highlights": [
             "Architect/developer of NodeJs app that calculated employee bit.ly links to drive more traffic to AOL sites",
             "Collaborated with Mapquest to create innovative Traffic Notification Services system that alerts the best time to leave",
-            "Created 'Mapquest Sports'. Web & mobile Innovations that deliver relevant geo-located sports updates",
-            "Created “Mapquest Headlines” for Patch.com that allowed delivery of geo-located news headlines"
+            "Created 'Mapquest Sports' that delivers relevant geo-located sports updates",
+            "Created 'Mapquest Headlines' for Patch.com that allowed delivery of geo-located news headlines"
           ]
         },
         {

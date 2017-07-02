@@ -21,10 +21,10 @@ export default class App extends Component {
   }
 
   render() {
-    let model = resume.model,
-    backgroundPage = this.state.enableBg ? "lightskyblue" : "",
-    backgroundCard = this.state.enableBg ? "lightyellow" : "",
-    borderCard = this.state.enableBg ? "darkorange" : ""
+    let model = resume.model
+    let backgroundPage = this.state.enableBg ? "lightskyblue" : "",
+        backgroundCard = this.state.enableBg ? "lightyellow" : "",
+            borderCard = this.state.enableBg ? "darkorange" : ""
 
     return (
         <div>
