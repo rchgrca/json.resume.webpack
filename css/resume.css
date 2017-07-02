@@ -59,6 +59,9 @@
 .darkorange {
     border: 1px solid darkorange !important;
 }
+.contact-details {
+    text-align: center;
+}
 @media (max-width: 992px) {
   .clear-margin-sm {
     margin-bottom: 0;
