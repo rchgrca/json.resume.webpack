@@ -1,5 +1,5 @@
 import moment from 'moment'
-import resume from '../../js/models/resume'
+import resume from '../../../js/models/resume'
 
 describe("The resume JSON data model", () => {
 
