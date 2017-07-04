@@ -1,6 +1,4 @@
-import $ from 'jquery';
-
-export default $.extend(true, {}, {}, {
+export default Object.assign({},{
     model: {
       "basics": {
         "name": "Richard L. Garcia",
