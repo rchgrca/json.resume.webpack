@@ -5,46 +5,48 @@ describe("The resume JSON data model", () => {
 
     let model = resume.model
 
-    it("has the basic information describing the person", () => {
+    it("lists a person's basic information", () => {
         expect(model.basics.name).toEqual("Richard L. Garcia")
         expect(model.basics.label).toEqual("Frontend Software Developer")
         expect(model.basics.email).toEqual("rchgrca@gmail.com")
         expect(model.basics.phone).toEqual("5109183102")
     })
 
-    it("has a summary", () => {
+    it("lists a summary", () => {
         let summary = `Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:`
         expect(model.basics.summary).toEqual(summary)
     })
 
-    it("has highlights", () => {
+    it("lists highlights", () => {
         let highlight = [
             `React, Redux, Webpack, Ruby on Rails, SASS, Jasmine, Karma, RSpec, MySQL, Backbone, Handlebars`,
             `ES6, Test Driven Development, Responsive Web Design, Mapbox, Highcharts, Auth0, Liquid, postMessage, Heroku, Git`
         ]
-        for (var i=0;i<model.basics.highlights.length < 0; i++){
-            expect(model.basics.highlights[i]).toEqual(highlight[i])
-        }
+
+        model.basics.highlights.forEach((o,i) => {
+            expect(o).toEqual(highlight[i])
+        })
     })
 
-    it("has a map location", () => {
+    it("lists a map location", () => {
         expect(model.basics.location.map).toEqual("https://goo.gl/maps/vz51Y5HhXLN2")
     })
 
-    it("has a LinkedIn profile", () => {
+    it("lists a LinkedIn profile", () => {
         let aProfiles = [{
             "network": "LinkedIn",
             "username": "rchgrca",
             "url": "http://www.linkedin.com/in/rchgrca"
         }]
-        for (var i=0;i<model.basics.profiles.length < 0; i++){
-            expect(model.basics.profiles[i].network).toEqual(aProfiles[i].network)
-            expect(model.basics.profiles[i].username).toEqual(aProfiles[i].username)
-            expect(model.basics.profiles[i].url).toEqual(aProfiles[i].url)
-        }
+
+        model.basics.profiles.forEach((o,i) => {
+            expect(o.network).toEqual(aProfiles[i].network)
+            expect(o.username).toEqual(aProfiles[i].username)
+            expect(o.url).toEqual(aProfiles[i].url)
+        })
     })
 
-    it("has a list of sections with font-icon classnames", () => {
+    it("lists content sections with font-icon classnames", () => {
         var aSection = [
             {section: "about", font: "user"},
             {section: "experience", font: "building"},
@@ -53,19 +55,19 @@ describe("The resume JSON data model", () => {
             {section: "interests", font: "heart"},
             {section: "philosophy", font: "lightbulb-o"},
             {section: "day", font: "clock-o"}
-        ]
+        ],
+        keySection = Object.keys(model.basics.section[0])
 
         expect(model.basics.section.length).toEqual(7)
 
-        for (var i=0;i<model.basics.section.length < 0; i++){
-            expect(model.basics.section[i].section).not.toEqual("skills")
-            expect(model.basics.section[i].section).toEqual(aSection[i].section)
-            expect(model.basics.section[i].font).toEqual(aSection[i].font)
-        }
-
+        model.basics.section.forEach((o,i) => {
+            expect(o.section).not.toEqual("skills")
+            expect(o.section).toEqual(aSection[i].section)
+            expect(o.font).toEqual(aSection[i].font)
+        })
     })
 
-    it("has a map to font-awesome weather icons", () => {
+    it("contains a dark sky font icon to font-awesome weather icon map", () => {
         let icon = {
             "clear-day": "day-sunny",
             "clear-night": "night-clear",
@@ -86,10 +88,9 @@ describe("The resume JSON data model", () => {
         aIcon.forEach((key) => {
             expect(model.basics.weather[key]).toEqual(icon[key])
         })
-
     })
 
-    it("has several work experiences", () => {
+    it("lists work experiences", () => {
         let lastJob = {
             "company": "Euclid Analytics",
             "position": "Sr. Frontend Engineer",
@@ -125,7 +126,6 @@ describe("The resume JSON data model", () => {
         aHighlights.forEach((key) => {
             expect(model.work[0].highlights[key]).toEqual(lastJob.highlights[key])
         })
-
     })
 
     it("lists education", () => {
@@ -149,7 +149,7 @@ describe("The resume JSON data model", () => {
 
     })
 
-    fit("lists relevant books read", () => {
+    it("lists relevant books read", () => {
         let books = [
             {
               "name": "The Effective Engineer",
@@ -169,7 +169,15 @@ describe("The resume JSON data model", () => {
             expect(o.name).toEqual(books[i].name)
             expect(o.href).toEqual(books[i].href)
         })
+    })
 
+    it("lists languages known", () => {
+        let languages = [
+          {
+            "language": "Spanish",
+            "fluency": "(speak, read, write)"
+          }
+        ]
     })
 
 });
