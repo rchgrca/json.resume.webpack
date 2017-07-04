@@ -81,7 +81,7 @@ describe("The resume JSON data model", () => {
             "thunderstorm": "thunderstorm",
             "tornado": "tornado"
         },
-        aIcon = Object.keys(icon)
+        aIcon = Object.keys(model.basics.weather)
 
         aIcon.forEach((key) => {
             expect(model.basics.weather[key]).toEqual(icon[key])
@@ -107,12 +107,16 @@ describe("The resume JSON data model", () => {
                 "Recipient of \"Euclid Above and Beyond Award\""
             ]
         },
-        aLastJob = Object.keys(lastJob),
-        aHighlights = lastJob.highlights
+        aLastJob = Object.keys(model.work[0]),
+        aHighlights = model.work[0].highlights
 
+        expect(model.work.length).toBeGreaterThan(0)
         expect(model.work.length).toEqual(5)
+
         expect(moment(model.work[0].startDate).isValid()).toEqual(true)
         expect(moment(model.work[0].endDate).isValid()).toEqual(true)
+
+        expect(moment(model.work[0].endDate).isAfter(moment(model.work[0].startDate))).toEqual(true)
 
         aLastJob.forEach((key) => {
             expect(model.work[0][key]).toEqual(lastJob[key])
@@ -122,6 +126,49 @@ describe("The resume JSON data model", () => {
             expect(model.work[0].highlights[key]).toEqual(lastJob.highlights[key])
         })
 
+    })
+
+    it("lists education", () => {
+        let education = {
+            "institution": "Texas A&M University",
+            "area": "Electronics Engineering Technology, Data Communications Emphasis",
+            "studyType": "Bachelor",
+            "startDate": "1984-08-15",
+            "endDate": "1990-05-15",
+            "gpa": "0.0",
+            "courses": []
+        },
+        aEducation = Object.keys(model.education[0])
+
+        expect(model.education.length).toBeGreaterThan(0)
+        expect(model.education.length).toEqual(1)
+
+        aEducation.forEach((key) => {
+            expect(model.education[0][key]).toEqual(education[key])
+        })
+
+    })
+
+    fit("lists relevant books read", () => {
+        let books = [
+            {
+              "name": "The Effective Engineer",
+              "keywords": [],
+              "href":"http://www.theeffectiveengineer.com/"
+            },
+            {
+              "name": "The Pragmatic Programmer",
+              "keywords": [],
+              "href":"https://pragprog.com/book/tpp/the-pragmatic-programmer"
+            }
+        ]
+
+        expect(model.books.length).toEqual(2)
+
+        model.books.forEach((o, i) => {
+            expect(o.name).toEqual(books[i].name)
+            expect(o.href).toEqual(books[i].href)
+        })
 
     })
 
