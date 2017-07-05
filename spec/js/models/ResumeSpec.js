@@ -143,6 +143,11 @@ describe("The resume JSON data model", () => {
         expect(model.education.length).toBeGreaterThan(0)
         expect(model.education.length).toEqual(1)
 
+        expect(moment(model.education[0].startDate).isValid()).toEqual(true)
+        expect(moment(model.education[0].endDate).isValid()).toEqual(true)
+
+        expect(moment(model.education[0].endDate).isAfter(moment(model.education[0].startDate))).toEqual(true)
+
         aEducation.forEach((key) => {
             expect(model.education[0][key]).toEqual(education[key])
         })
