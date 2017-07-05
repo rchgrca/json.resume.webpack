@@ -47,7 +47,7 @@ describe("The resume JSON data model", () => {
     })
 
     it("lists content sections with font-icon classnames", () => {
-        var aSection = [
+        let aSection = [
             {section: "about", font: "user"},
             {section: "experience", font: "building"},
             {section: "education", font: "mortar-board"},
@@ -178,6 +178,77 @@ describe("The resume JSON data model", () => {
             "fluency": "(speak, read, write)"
           }
         ]
+
+        expect(model.languages.length).toEqual(1)
+
+        model.languages.forEach((o) => {
+            expect(o.language).toEqual(languages[0].language)
+            expect(o.fluency).toEqual(languages[0].fluency)
+        })
+    })
+
+    it("lists interests", () => {
+        let interests = [
+          {
+            "name": "Cycling",
+            "keywords": [],
+            "href":"http://svlatino.com/rich-garcia-applies-entrepreneur-skills-for-a-worthy-cause/"
+          },
+          {
+            "name": "Near-Space Exploration",
+            "keywords": [],
+            "href":"https://www.youtube.com/watch?v=QldWTVju_uk"
+          }
+        ]
+
+        expect(model.interests.length).toEqual(2)
+
+        model.interests.forEach((o,i) => {
+            expect(o.name).toEqual(interests[i].name)
+            expect(o.href).toEqual(interests[i].href)
+        })
+    })
+
+    it("lists philosophies", () => {
+        let philosophy = [
+          "If your dreams don’t scare you, they are too small."
+        ]
+
+        expect(model.philosophy.length).toEqual(1)
+
+        model.philosophy.forEach((o,i) => {
+            expect(o).toEqual(philosophy[i])
+        })
+    })
+
+    it("lists how I spend my day in hours", () => {
+        let day = {
+            labels: ["Sleep", "Code", "Family", "Self", "Commute", "Meetings", "Organize", "Meditate"],
+            datasets: [{
+                data: [7, 6, 3, 3, 2, 1.5, 1, .5],
+                backgroundColor: ["#0544d3", "#6b0392", "#59922b", "#d70206", "maroon", "#f05b4f", "#f4c63d", "#d17905"],
+                hoverBackgroundColor: ["#0544d3", "#6b0392", "#59922b", "#d70206", "maroon", "#f05b4f", "#f4c63d", "#d17905"],
+                borderWidth: [0,0,0,0,0,0,0,0]
+            }],
+            options: {
+                responsive: true,
+                cutoutPercentage: 0,
+                animation: {
+                    animateScale: true
+                }
+            }
+        },
+        aLabels = model.day.labels,
+        aHours = model.day.datasets[0].data,
+        aBgColor = model.day.datasets[0].backgroundColor
+
+        aLabels.forEach((o,i) => {
+            expect(o).toEqual(day.labels[i])
+            expect(aHours[i]).toEqual(day.datasets[0].data[i])
+            expect(aBgColor[i]).toEqual(day.datasets[0].backgroundColor[i])
+        })
+
+
     })
 
 });
