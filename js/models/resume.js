@@ -12,6 +12,7 @@ export default Object.assign({},{
           "React, Redux, Webpack, Ruby on Rails, SASS, Jasmine, Karma, RSpec, MySQL, Backbone, Handlebars",
           "ES6, Test Driven Development, Responsive Web Design, Mapbox, Highcharts, Auth0, Liquid, postMessage, Heroku, Git"
         ],
+        "pdf": "/rg.resume.pdf",
         "location": {
           "address": "38648 Dow Ct.",
           "postalCode": "CA 94536",

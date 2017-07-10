@@ -8,7 +8,7 @@ export default class ProfileCard extends Component {
     render() {
         let { model, handleClick, bgColor, borderCard } = this.props
         let contact = [
-            {icon: "location-arrow", detail: "Home", href: model.basics.location.map},
+            {icon: "file-pdf-o", detail: "PDF", href: model.basics.pdf},
             {icon: "phone", detail: "Phone", href: `tel: ${model.basics.phone}`},
             {icon: "envelope", detail: "E-mail", href: `mailto: ${model.basics.email}`},
             {icon: "link", detail: model.basics.website.value, href: model.basics.website.href}
