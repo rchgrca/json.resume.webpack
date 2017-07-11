@@ -90,7 +90,7 @@ export default Object.assign({},{
           "position": "Co-founder, Developer",
           "website": "http://blyve.com",
           "startDate": "2008-01-01",
-          "endDate": "2011-10-31",
+          "endDate": "2010-08-01",
           "summary": "Development of client-side code, fundraising, business development",
           "highlights": [
             "Single-handedly conceived, designed, architected, & developed full stack of a polling based, real-time web and mobile-web based application from conception to release",
