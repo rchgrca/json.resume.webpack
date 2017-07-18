@@ -12,6 +12,12 @@ describe("The resume JSON data model", () => {
         expect(model.basics.phone).toEqual("5109183102")
     })
 
+    it("lists card information", () => {
+        expect(model.basics.pdf).toEqual("rg.resume.pdf")
+        expect(model.basics.github.value).toEqual("Github")
+        expect(model.basics.github.href).toEqual("https://github.com/rchgrca/json.resume.webpack")
+    })
+
     it("lists a summary", () => {
         let summary = `Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:`
         expect(model.basics.summary).toEqual(summary)

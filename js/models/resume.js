@@ -7,6 +7,7 @@ export default Object.assign({},{
         "email": "rchgrca@gmail.com",
         "phone": "5109183102",
         "website": {"value":"Portfolio","href":"http://rchgrca.io"},
+        "github" : {"value":"Github","href":"https://github.com/rchgrca/json.resume.webpack"},  
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
           "React, Redux, Webpack, Ruby on Rails, SASS, Jasmine, Karma, RSpec, MySQL, Backbone, Handlebars",
