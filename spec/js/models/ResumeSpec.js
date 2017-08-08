@@ -139,8 +139,6 @@ describe("The resume JSON data model", () => {
             "institution": "Texas A&M University",
             "area": "Electronics Engineering Technology, Data Communications Emphasis",
             "studyType": "Bachelor",
-            "startDate": "1984-08-15",
-            "endDate": "1990-05-15",
             "gpa": "0.0",
             "courses": []
         },
@@ -149,10 +147,8 @@ describe("The resume JSON data model", () => {
         expect(model.education.length).toBeGreaterThan(0)
         expect(model.education.length).toEqual(1)
 
-        expect(moment(model.education[0].startDate).isValid()).toEqual(true)
-        expect(moment(model.education[0].endDate).isValid()).toEqual(true)
-
-        expect(moment(model.education[0].endDate).isAfter(moment(model.education[0].startDate))).toEqual(true)
+        expect(model.education[0].startDate).not.toBeDefined()
+        expect(model.education[0].endDate).not.toBeDefined()
 
         aEducation.forEach((key) => {
             expect(model.education[0][key]).toEqual(education[key])
