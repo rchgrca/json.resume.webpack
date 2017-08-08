@@ -19,10 +19,6 @@ export default class Education extends Component {
                             <p className="clear-margin relative">
                                 <strong>{education.area}, {education.studyType}</strong>, {education.institution}
                             </p>
-                            <p className="text-muted">
-                                <small>{attended}</small>
-                            </p>
-                            <i></i>
                             <div className="space-top labels"></div>
                         </div>
                     </li>
