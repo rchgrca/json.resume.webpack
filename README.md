@@ -35,6 +35,7 @@ Redux is cool but overkill for this project
         * maps to font-awesome icons
         * hooks for updating style on weather changes
           * handleClickImage (index.jsx)
+          * uses React state
 * Refactoring (details.jsx)
   * "switch" => "React.createElement()"
     * 28 lines of code to 1
