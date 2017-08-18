@@ -40,3 +40,5 @@ Redux is cool but overkill for this project
     * 28 lines of code to 1
   * "getElement"
     * acts like switch statement using ES6 object shorthand
+* Tests
+  * test the data model
