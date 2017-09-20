@@ -87,6 +87,20 @@ export default Object.assign({},{
           ]
         },
         {
+          "company": "AOL, Inc.",
+          "position": "Sr. Software Developer",
+          "website": "",
+          "startDate": "2010-08-01",
+          "endDate": "2011-03-30",
+          "summary": "Ideate, Innovate, Implement",
+          "highlights": [
+            "Architect/developer of NodeJs app that calculated employee bit.ly links to drive more traffic to AOL sites",
+            "Collaborated with Mapquest to create innovative Traffic Notification Services system that alerts the best time to leave",
+            "Created 'Mapquest Sports' that delivers relevant geo-located sports updates",
+            "Created 'Mapquest Headlines' for Patch.com that allowed delivery of geo-located news headlines"
+          ]
+        },
+        {
           "company": "Blyve, Inc",
           "position": "Co-founder, Developer",
           "website": "http://blyve.com",
@@ -99,20 +113,6 @@ export default Object.assign({},{
             "Featured in video blog by <a href='http://www.youtube.com/watch?v=UmCA69ciyzo'>Robert Scoble</a>",
             "Featured startup by Manos Accelerator, first cohort",
             "Single-handedly recruited and hired small team of developers & product managers to create application"
-          ]
-        },
-        {
-          "company": "AOL, Inc.",
-          "position": "Sr. Software Developer",
-          "website": "",
-          "startDate": "2010-08-01",
-          "endDate": "2011-03-30",
-          "summary": "Ideate, Innovate, Implement",
-          "highlights": [
-            "Architect/developer of NodeJs app that calculated employee bit.ly links to drive more traffic to AOL sites",
-            "Collaborated with Mapquest to create innovative Traffic Notification Services system that alerts the best time to leave",
-            "Created 'Mapquest Sports' that delivers relevant geo-located sports updates",
-            "Created 'Mapquest Headlines' for Patch.com that allowed delivery of geo-located news headlines"
           ]
         },
         {

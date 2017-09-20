@@ -81,7 +81,7 @@ export default class App extends Component {
   }
 
   getApiUrl(){
-      let crossorigin = 'http://crossorigin.me',
+      let crossorigin = 'https://cors-anywhere.herokuapp.com',
       domain = 'https://api.darksky.net/forecast',
       apikey = '5bb3f38d7e0ad6f3833ee2b61a26a5df',
       geolocation = '37.571417,-121.965054'
