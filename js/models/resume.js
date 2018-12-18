@@ -10,8 +10,8 @@ export default Object.assign({},{
         "github" : {"value":"Github","href":"https://github.com/rchgrca/json.resume.webpack"},
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
-          "React, Redux, Webpack, Ruby on Rails, SASS, Jasmine, Karma, Enzyme, RSpec, MySQL, Backbone, Handlebars",
-          "ES6, Test Driven Development, Responsive Web Design, Mapbox, Highcharts, Auth0, Liquid, postMessage, Heroku, Git"
+          "Angular6, React, Redux, RxJs, Typescript, GraphQL, Webpack, SASS, CSS Grid, Jasmine, Karma, Protractor, RSpec, MySQL, Docker",
+          "ES6, Test Driven Development, Responsive Web Design, Circle CI, Mapbox, Highcharts, Git, Drupal, New Relic Synthetics, Optimizely, Agile"
         ],
         "pdf": "rg.resume.pdf",
         "location": {
@@ -34,7 +34,7 @@ export default Object.assign({},{
             {section: "experience", font: "building"},
             //{section: "skills", font: "code"},
             {section: "education", font: "mortar-board"},
-            {section: "books", font: "book"},
+            //{section: "books", font: "book"},
             {section: "interests", font: "heart"},
             {section: "philosophy", font: "lightbulb-o"},
             {section: "day", font: "clock-o"}
@@ -56,6 +56,25 @@ export default Object.assign({},{
         }
       },
       "work": [
+          {
+            "company": "Bill.com",
+            "position": "Sr. Web Developer",
+            "website": "http://bill.com",
+            "startDate": "2017-10-19",
+            "endDate": "",
+            "summary": "Cloud-based Accounts Payable Software (SPA), Digital Marketing Website (SPA)",
+            "highlights": [
+              "Frontend development/maintenance for finance based SPA that serves 3M users",
+              "Architected a decoupled CMS marketing SPA that serves 1.5M users",
+              "Implemented A/B testing experiments with Optimizely",
+              "Created suite of automated New Relic Synthetic Page Monitors",
+              "Created automated test suite with ProtractorJS that improved quality",
+              "Improved page performance from 8 seconds to 2 seconds",
+              "Created strict typography standards",
+              "Documented all engineering processes:  on-boarding, best practices, architecture",
+              "Recipient of four Bill.com \"You Are Awesome\" awards"
+            ]
+          },
         {
           "company": "Euclid Analytics",
           "position": "Sr. Frontend Engineer",
@@ -249,7 +268,7 @@ export default Object.assign({},{
       "day": {
           labels: ["Sleep", "Code", "Family", "Self", "Commute", "Meetings", "Organize", "Meditate"],
           datasets: [{
-              data: [7, 6, 3, 3, 2, 1.5, 1, .5],
+              data: [7, 6, 4, 3, 2, .5, 1, .5],
               backgroundColor: ["#0544d3", "#6b0392", "#59922b", "#d70206", "maroon", "#f05b4f", "#f4c63d", "#d17905"],
               hoverBackgroundColor: ["#0544d3", "#6b0392", "#59922b", "#d70206", "maroon", "#f05b4f", "#f4c63d", "#d17905"],
               borderWidth: [0,0,0,0,0,0,0,0]
