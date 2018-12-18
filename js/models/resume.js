@@ -254,12 +254,17 @@ export default Object.assign({},{
         {
           "name": "Cycling",
           "keywords": [],
-          "href":"http://svlatino.com/rich-garcia-applies-entrepreneur-skills-for-a-worthy-cause/"
+          "href":"img/rich.paris.png"
         },
         {
           "name": "Near-Space Exploration",
           "keywords": [],
           "href":"https://www.youtube.com/watch?v=QldWTVju_uk"
+        },
+        {
+          "name": "Street Music Performance",
+          "keywords": [],
+          "href":"https://www.youtube.com/watch?v=kjfFRNsp5rA"
         }
       ],
       "philosophy": [

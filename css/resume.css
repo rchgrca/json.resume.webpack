@@ -82,6 +82,9 @@ body {
   min-height: 300px;
   padding: 10px;
 }
+#interests .card:nth-child(2) {
+    border: none;
+}
 #interests .card:first-child, #books .card:first-child {
     padding: 10px 10px 0;
 }
