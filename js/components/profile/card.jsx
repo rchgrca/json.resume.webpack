@@ -9,7 +9,7 @@ export default class ProfileCard extends Component {
         let { model, handleClick, bgColor, borderCard } = this.props
         let contact = [
             {icon: "file-pdf-o", detail: "PDF", href: model.basics.pdf},
-            {icon: "phone", detail: "Phone", href: `tel: ${model.basics.phone}`},
+            //{icon: "phone", detail: "Phone", href: `tel: ${model.basics.phone}`},
             {icon: "envelope", detail: "E-mail", href: `mailto: ${model.basics.email}`},
             {icon: "github", detail: model.basics.github.value, href: model.basics.github.href}
         ];
