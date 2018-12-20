@@ -150,8 +150,7 @@ export default Object.assign({},{
             "Recipient of ‘You Rock’ Award and mentored seven junior level engineers",
             "Tutored English to Spanish-speaking Yahoo! custodians, Captain Yahoo! Soccer Team"
           ]
-        }
-        /*,
+        },
         {
           "company": "eBay, Inc.",
           "position": "Contract Developer",
@@ -162,7 +161,7 @@ export default Object.assign({},{
           "highlights": [
             "Several features including 'Item Subtitle', 'Help Phase 5' (Lead Developer)"
           ]
-        },
+        }/*,
         {
           "company": "Thirdspace Interactive TV",
           "position": "Developer",
