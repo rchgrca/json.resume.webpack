@@ -3,7 +3,7 @@ export default Object.assign({},{
       "basics": {
         "name": "Richard L. Garcia",
         "label": "Frontend Software Developer",
-        "picture": "http://n.leesonbooks.com/rg/img/rich.beanie.copy.jpg",
+        "picture": "img/richg.beanie.square.png",
         "email": "rchgrca@gmail.com",
         "phone": "5109183102",
         "website": {"value":"Portfolio","href":"http://rchgrca.io"},
@@ -263,7 +263,7 @@ export default Object.assign({},{
         {
           "name": "Street Music Performance",
           "keywords": [],
-          "href":"https://www.youtube.com/watch?v=kjfFRNsp5rA"
+          "href":"https://www.youtube.com/watch?v=BAqCbCfcqic"
         }
       ],
       "philosophy": [
