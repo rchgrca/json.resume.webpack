@@ -1,0 +1,97 @@
+Richard L. Garcia
+Frontend Software Developer
+rchgrca@gmail.com
+http://rchgrca.io/resume
+
+
+ABOUT
+
+Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:
+
+- Angular6, React, Redux, RxJs, Typescript, GraphQL, Webpack, SASS, CSS Grid, Jasmine, Karma, Protractor, RSpec, MySQL, Docker
+- ES6, Test Driven Development, Responsive Web Design, Circle CI, Mapbox, Highcharts, Git, Drupal, New Relic Synthetics, Optimizely, Agile
+
+EXPERIENCE
+
+Sr. Web Developer, Bill.com
+Oct 2017 - Present, 1 year 1 month
+
+Cloud-based Accounts Payable Software (SPA), Digital Marketing Website (SPA)
+
+- Frontend development/maintenance for finance based SPA that serves 3M users
+- Architected a decoupled CMS marketing SPA that serves 1.5M users
+- Implemented A/B testing experiments with Optimizely
+- Created suite of automated New Relic Synthetic Page Monitors
+- Created automated test suite with ProtractorJS that improved quality
+- Improved page performance from 8 seconds to 2 seconds
+- Created strict typography standards
+- Documented all engineering processes: on-boarding, best practices, architecture
+- Recipient of four Bill.com "You Are Awesome" Awards
+
+
+Sr. Frontend Engineer, Euclid Analytics
+Aug 2015 - Apr 2017, 1 year 8 months
+
+Data Visualization describing physical store customer identity and behavior
+
+- Created/maintained a single page application and transitioned it successfully from Backbone to React
+- Created several custom WiFi portals capturing 10M identifiable customers from their visits
+- Improved page performance from 9 seconds to 2 seconds
+- Envisioned and created several features not solicited by product management: Mapbox tooltip showing store distance
+- Documented all engineering processes: on-boarding, best practices, architecture
+- Led several engineering book clubs for training and knowledge sharing
+- Recipient of "Euclid Above and Beyond Award"
+
+Contract Developer, Webmocha/Intuit
+Feb 2012 - Jul 2015, 3 years 5 months
+
+Adobe Experience Manager (CQ5) Component Development for Intuit
+
+- Lead Developer for “on-boarding” of JSP pages to CQ5/Ruby on Rails environment for Pro Tax Group
+- Created numerous CQ5 “responsive web design” components used by marketing to build customizable web pages
+- Improved page performance from 12 secs to 3 secs
+
+Sr. Software Developer, AOL, Inc.
+Aug 2010 - Mar 2011, 7 months
+
+Ideate, Innovate, Implement
+
+- Architect/developer of NodeJs app that calculated employee bit.ly links to drive more traffic to AOL sites
+- Collaborated with Mapquest to create innovative Traffic Notification Services system that alerts the best time to leave
+- Created 'Mapquest Sports'. Web & mobile Innovations that deliver relevant geo-located sports updates
+- Created “Mapquest Headlines” for Patch.com that allowed delivery of geo-located news headlines
+
+Co-founder, Developer, Blyve, Inc
+Jan 2008 - Aug 2010, 2 years 7 months
+
+Development of client-side code, fundraising, business development
+
+- Single-handedly conceived, designed, architected, & developed full stack of a polling based, real-time web and mobile-web based application from conception to release
+- Recognized that Node.js was a better solution for our real-time application, authorized/supervised team to convert our product including Backbone.js, Handlebars.js, and LESS
+- Featured in video blog by Robert Scoble
+- Featured startup by Manos Accelerator, first cohort
+- Single-handedly recruited and hired small team of developers & product managers to create application
+
+Sr. Software Developer, Yahoo!, Inc.
+Mar 2004 - Nov 2007, 3 years 8 months
+
+Development of dynamic client-side code for the presentation layer
+
+- Lead Frontend Engineer Yahoo! Frontpage (delivered Exceptional News & Top Searches modules)
+- Lead Frontend Engineer for MyYahoo and Cobrand Portals (delivered Zorro, first My Yahoo! Frontend Engineer)
+- Lead Frontend Engineer and Archictect for AT&T WRA/MRA web and mobile-based applications (AT&T Homezone, AT&T U-verse TV, completed mobile application in two weeks, 1 month ahead of schedule)
+- Lead Frontend Engineer Yahoo! Teachers
+- Lecturer at Yahoo Frontend Engineer Summit ('Developing for the Three Screen Experience')
+- Recipient of ‘You Rock’ Award and mentored seven junior level engineers
+- Tutored English to Spanish-speaking Yahoo! custodians, Captain Yahoo! Soccer Team
+
+EDUCATION
+
+Electronics Engineering Technology, Data Communications Emphasis, Bachelor, Texas A&M University
+Aug 1984 - May 1990
+
+
+INTERESTS
+
+- Cycling
+- Near-Space Exploration
