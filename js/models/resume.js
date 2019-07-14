@@ -11,7 +11,7 @@ export default Object.assign({},{
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
           "Angular6, React, Redux, RxJs, Typescript, GraphQL, Webpack, SASS, CSS Grid, Flexbox, jQuery, Jasmine, Karma, Protractor, RSpec, MySQL, Docker",
-          "ES6, Test Driven Development, Responsive Web Design, Gitlab CI, Sonarqube, Mapbox, Highcharts, Git, Drupal, New Relic Synthetics, Optimizely, Agile"
+          "ES6 JavaScript, TDD/BDD, Responsive Web Design, Gitlab CI, Sonarqube, Mapbox, Highcharts, Git, Drupal, New Relic, Optimizely, Agile"
         ],
         "pdf": "rg.resume.pdf",
         "location": {
