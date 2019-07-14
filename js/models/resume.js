@@ -10,8 +10,8 @@ export default Object.assign({},{
         "github" : {"value":"Github","href":"https://github.com/rchgrca/json.resume.webpack"},
         "summary": "Richard is a passionate engineer who loves solving problems at the macro and micro level. He is looking for a Front End development position that allows him to combine his love for optimizing the end user experience through visual layout and page performance. Richard has working experience with the following:",
         "highlights": [
-          "Angular6, React, Redux, RxJs, Typescript, GraphQL, Webpack, SASS, CSS Grid, Jasmine, Karma, Protractor, RSpec, MySQL, Docker",
-          "ES6, Test Driven Development, Responsive Web Design, Circle CI, Mapbox, Highcharts, Git, Drupal, New Relic Synthetics, Optimizely, Agile"
+          "Angular6, React, Redux, RxJs, Typescript, GraphQL, Webpack, SASS, CSS Grid, Flexbox, jQuery, Jasmine, Karma, Protractor, RSpec, MySQL, Docker",
+          "ES6, Test Driven Development, Responsive Web Design, Gitlab CI, Sonarqube, Mapbox, Highcharts, Git, Drupal, New Relic Synthetics, Optimizely, Agile"
         ],
         "pdf": "rg.resume.pdf",
         "location": {
@@ -66,13 +66,17 @@ export default Object.assign({},{
             "highlights": [
               "Frontend development/maintenance for finance based SPA that serves 3M users",
               "Architected a decoupled CMS marketing SPA that serves 1.5M users",
+              "Set up continuous integration/deployment/inspection with automated unit and e2e testing",
               "Implemented A/B testing experiments with Optimizely",
               "Created suite of automated New Relic Synthetic Page Monitors",
-              "Created automated test suite with ProtractorJS that improved quality",
+              "Created automated test suite with ProtractorJS that improved quality and sped up deployment",
+              "Technical assessment allowed for company wide adoption of HTTP/2",
               "Improved page performance from 8 seconds to 2 seconds",
               "Created strict typography standards",
               "Documented all engineering processes:  on-boarding, best practices, architecture",
-              "Recipient of four Bill.com \"You Are Awesome\" awards"
+              "Inspired others to learn by giving reviews of pertinent online training courses",
+              "Recipient of 'Top Innovation' at company hackathon",
+              "Recipient of five Bill.com \"You Are Awesome\" awards"
             ]
           },
         {
